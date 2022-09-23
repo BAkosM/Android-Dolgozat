@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 i++;
-                szam.setText(i);
+                szam.setText(String.valueOf(i));
                 if(i==0){
                     szam.setTextColor(Color.rgb(0,0,255));
                 } else if (i>0){
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 i--;
-                szam.setText(i);
+                szam.setText(String.valueOf(i));
                 if(i==0){
                     szam.setTextColor(Color.rgb(0,0,255));
                 } else if (i>0){
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 i=0;
-                szam.setText(i);
+                szam.setText(String.valueOf(i));
                 szam.setTextColor(Color.rgb(0,0,255));
             }
         });
